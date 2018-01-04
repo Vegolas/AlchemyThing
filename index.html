@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>welcome</title>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+    <nav>
+        <ul id="menu" class="menu">
+            <li class="active"><a href="#"><p class="small">Alchemy</p></a></li>
+            <li><a href="#"><p class="small">Crafting</p></a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1> Something, something there below...</h1>
+    </header>
+
+    <div class="main">
+        <p>something else</p>
+    </div>
+
+    </body>
+</html>
+
+
+<script>
+    $(function(){
+       
+       $('#menu li a').click(function() {
+            $('#menu li').removeClass('active');
+            $(this).parent().addClass('active');
+       })
+});
+</script>
